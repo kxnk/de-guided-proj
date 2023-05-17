@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     ##Extract playlist data
     
     playlists = sp.user_playlists('spotify')
-    playlist_link = "https://open.spotify.com/playlist/37i9dQZEVXcDYGt49X0ozW"
+    playlist_link = "https://open.spotify.com/playlist/XX"
     playlist_URI = playlist_link.split("/")[-1].split("?")[0]
     
     spotify_data = sp.playlist_tracks(playlist_URI)   
